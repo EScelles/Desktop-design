@@ -1,0 +1,78 @@
+html,
+body {
+  background: gray;
+  box-sizing: content-box;
+  border: none;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  max-width: 1440px;
+  min-width: 375px;
+  margin: 200px;
+  padding: 100px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "header header header header"
+    "nav nav main main ";
+}
+
+header {
+  grid-area: header;
+  background: white;
+  padding: 40px;
+  border-radius: 10px 10px 0 0;
+}
+
+nav {
+  grid-area: nav;
+  background: hsl(179, 62%, 43%);
+  padding: 40px;
+  color: hsl(204, 43%, 93%);
+  border-radius: 0 0 0 10px;
+}
+
+.container nav span {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.container nav span2 {
+  color: hsl(204, 43%, 93%);
+}
+
+main {
+  grid-area: main;
+  background: hsl(178, 75%, 42%);
+  padding: 40px;
+  color: hsl(204, 43%, 93%);
+  border-radius: 0 0 10px 0;
+}
+
+h1 {
+  color: hsl(179, 62%, 43%);
+}
+
+div header .p {
+  color: hsl(71, 73%, 54%);
+  font-weight: bold;
+}
+
+div header .pa {
+  color: hsl(218, 22%, 67%);
+  font-weight: bold;
+}
+
+div .btn {
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  border-radius: 5px;
+  width: 230px;
+  height: 50px;
+  font-size: larger;
+  font-weight: bold;
+  color: #ffff;
+}
